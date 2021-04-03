@@ -60,4 +60,5 @@ ORDER BY lastname
 ```
 
 #### 4a) En option, générez une API DOC.
-TO DO
+
+La documentation constitue la base d'une bonne expérience utilisateur.
