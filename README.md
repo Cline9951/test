@@ -20,6 +20,18 @@ Sélectionne tous les ancêtres de bibliothèque du nœud actuel - et le courant
 
 # Partie 2 : Application web (environ 1h10 minutes)
 
+#### 1) Écrire une classe Personne ayant comme attributs : un nom, prénom, date de naissance, âge.
+```
+bin/console make:entity
+```
+#### 2) Créer une base de données correspondante
+
+```
+ php bin/console make:migration
+```
+Cela crée une migration (= une sorte de point de sauvegarde) dans src/Migrations/. Cette migration définit les actions qui seront exécutées sur la BDD, mais ne fait rien pour le moment.
+
+
 #### 3a) Créer les endpoints qui :
 
 sauvegarde une nouvelle Personne.
@@ -46,3 +58,6 @@ renvoie toutes les Personnes enregistrées par ordre alphabétique.
 SELECT * FROM Personne 
 ORDER BY lastname
 ```
+
+#### 4a) En option, générez une API DOC.
+TO DO
