@@ -20,8 +20,9 @@ Sélectionne tous les ancêtres de bibliothèque du nœud actuel - et le courant
 
 # Partie 2 : Application web (environ 1h10 minutes)
 
-sauvegarde une nouvelle Personne.
+#### 3a) Créer les endpoints qui :
 
+sauvegarde une nouvelle Personne.
 ```
 public function postCreate()
 {
@@ -39,7 +40,7 @@ public function postCreate()
     return $this->json('Personne créée');
 }
 ```
-renvoie toutes les Personnes enregistrées par ordre alphabétique
+renvoie toutes les Personnes enregistrées par ordre alphabétique.
 
 ```
 SELECT * FROM Personne 
