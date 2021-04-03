@@ -1,15 +1,15 @@
 
 # Partie théorique : XPATH (environ 20 minutes)
 
-## 1 Retourner tous les éléments book
+#### 1 Retourner tous les éléments book
 
 /library/book
 
-## 2 Retourner tous les éléments title ayant comme parent un élément book avec un attribut type égal à roman
+#### 2 Retourner tous les éléments title ayant comme parent un élément book avec un attribut type égal à roman
 
 /library/book[type=roman]/title
 
-### 3 Retourner le nombre d'éléments book ayant un attribut type égal à bd
+#### 3 Retourner le nombre d'éléments book ayant un attribut type égal à bd
 
 /library/book[type=bd]/title
 
@@ -41,5 +41,7 @@ public function postCreate()
 ```
 renvoie toutes les Personnes enregistrées par ordre alphabétique
 
+```
 SELECT * FROM Personne 
 ORDER BY lastname
+```
